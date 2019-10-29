@@ -1,7 +1,7 @@
 {
-  "name": "react-native-library-boilerplate",
-  "version": "0.0.2",
-  "description": "Description for library",
+  "name": "react-native-animated-radio-button-group",
+  "version": "0.0.1",
+  "description": "Fully customizable, animated & easy to use radio button group",
   "keywords": [
     "FreakyCoder",
     "freakycoder",
@@ -14,13 +14,15 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-library-boilerplate/issues",
-  "main": "./lib/src/index.js",
-  "repository": "git@github.com:WrathChaos/react-native-library-boilerplate.git",
+  "bugs": "https://github.com/WrathChaos/react-native-animated-radio-button-group/issues",
+  "main": "./lib/src/RadioButtonGroup.js",
+  "repository": "git@github.com:WrathChaos/react-native-animated-radio-button-group.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 16.x.x",
-    "react-native": ">= 0.55.x"
+    "react-native": ">= 0.55.x",
+    "react-native-animatable": ">= 1.3.3",
+    "react-native-animated-radio-button": ">= 0.0.4"
   }
 }

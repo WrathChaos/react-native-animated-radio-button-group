@@ -9,6 +9,14 @@ const App = () => {
     color: "#F6800F",
     size: 25
   });
+
+  const data = [
+    { id: 0, text: "Cinema", color: "#FF0004", size: 25 },
+    { id: 1, text: "Theatre", color: "#FB4009", size: 25 },
+    { id: 2, text: "Gaming", color: "#F6800F", size: 25 },
+    { id: 3, text: "Travelling", color: "#F4A012", size: 25 },
+    { id: 4, text: "Sport", color: "#F0E017", size: 25 }
+  ];
   return (
     <View>
       <StatusBar barStyle="dark-content" />
@@ -21,13 +29,7 @@ const App = () => {
       >
         <RadioButtonGroup
           initial={2}
-          data={[
-            { id: 0, text: "Cinema", color: "#FF0004", size: 25 },
-            { id: 1, text: "Theatre", color: "#FB4009", size: 25 },
-            { id: 2, text: "Gaming", color: "#F6800F", size: 25 },
-            { id: 3, text: "Travelling", color: "#F4A012", size: 25 },
-            { id: 4, text: "Sport", color: "#F0E017", size: 25 }
-          ]}
+          data={data}
           onChange={item => setItem(item)}
         />
         <View style={{ margin: 16, top: "50%" }}>
