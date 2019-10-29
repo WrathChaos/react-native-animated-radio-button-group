@@ -15,7 +15,7 @@
 
 <p align="center">
   <img alt="React Native Animated Radio Button Group"
-        src="assets/Screenshots/JSLibraryBoilerplate.png" />
+        src="assets/Screenshots/example.gif" />
 </p>
 
 # Installation
