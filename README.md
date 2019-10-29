@@ -45,12 +45,11 @@ npm i react-native-animated-radio-button-group
 import RadioButtonGroup from "react-native-animated-radio-button-group";
 ```
 
-## Component1 Usage
+## Usage
 
-Data is just an example, you can customize **each** radio button with data itself. Example; you can set fontSize, innerColor, outerColor for each of them. They take all props which is available on \[React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
+Data is just an example, you can customize **each** radio button with data itself. Example; you can set fontSize, innerColor, outerColor for each of them. They take all props which is available on [React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
 
 ```js
-
 const data = [
   { id: 0, text: "Cinema", color: "#FF0004", size: 25 },
   { id: 1, text: "Theatre", color: "#FB4009", size: 25 },
