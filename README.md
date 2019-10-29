@@ -49,7 +49,7 @@ import RadioButtonGroup from "react-native-animated-radio-button-group";
 
 Data is just an example, you can customize **each** radio button with data itself. Example; you can set fontSize, innerColor, outerColor for each of them. They take all props which is available on [React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
 
-```js
+```jsx
 const data = [
   { id: 0, text: "Cinema", color: "#FF0004", size: 25 },
   { id: 1, text: "Theatre", color: "#FB4009", size: 25 },
