@@ -1,8 +1,12 @@
 {
   "name": "react-native-animated-radio-button-group",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fully customizable, animated & easy to use radio button group",
   "keywords": [
+    "animated",
+    "animatable",
+    "radio-button",
+    "radio-button-group",
     "FreakyCoder",
     "freakycoder",
     "kuray",
