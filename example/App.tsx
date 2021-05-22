@@ -1,115 +1,117 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React, { useState } from "react";
+import { View, Text, StatusBar, SafeAreaView } from "react-native";
+// import RadioButtonGroup from "react-native-animated-radio-button-group";
+import RadioButtonGroup, { IRadioButton } from "./build/dist/RadioButtonGroup";
 
- import React from 'react';
- import {
-   SafeAreaView,
-   ScrollView,
-   StatusBar,
-   StyleSheet,
-   Text,
-   useColorScheme,
-   View,
- } from 'react-native';
+const App = () => {
+  const [item, setItem] = useState<IRadioButton>({
+    id: 2,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#F6800F",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#F6800F",
+  });
 
- import {
-   Colors,
-   DebugInstructions,
-   Header,
-   LearnMoreLinks,
-   ReloadInstructions,
- } from 'react-native/Libraries/NewAppScreen';
+  const data: Array<IRadioButton> = [
+    {
+      id: 0,
+      outerStyle: {
+        width: 50,
+        height: 50,
+        borderColor: "#FF0004",
+        borderRadius: 25,
+      },
+      innerStyle: {
+        borderRadius: 25,
+      },
+      color: "#FF0004",
+    },
+    {
+      id: 1,
+      outerStyle: {
+        width: 50,
+        height: 50,
+        borderColor: "#FB4009",
+        borderRadius: 25,
+      },
+      innerStyle: {
+        borderRadius: 25,
+      },
+      color: "#FB4009",
+    },
+    {
+      id: 2,
+      outerStyle: {
+        width: 50,
+        height: 50,
+        borderColor: "#F6800F",
+        borderRadius: 25,
+      },
+      innerStyle: {
+        borderRadius: 25,
+      },
+      color: "#F6800F",
+    },
+    {
+      id: 4,
+      outerStyle: {
+        width: 50,
+        height: 50,
+        borderColor: "#F4A012",
+        borderRadius: 25,
+      },
+      innerStyle: {
+        borderRadius: 25,
+      },
+      color: "#F4A012",
+    },
+    {
+      id: 5,
+      outerStyle: {
+        width: 50,
+        height: 50,
+        borderColor: "#F0E017",
+        borderRadius: 25,
+      },
+      innerStyle: {
+        borderRadius: 25,
+      },
+      color: "#F0E017",
+    },
+  ];
+  return (
+    <View>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView
+        style={{
+          marginTop: "30%",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <RadioButtonGroup
+          initial={2}
+          data={data}
+          horizontal
+          onChange={(item) => setItem(item)}
+          onPress={() => {}}
+        />
+        <View style={{ margin: 16, top: "50%" }}>
+          <Text style={{ fontWeight: "bold" }}>{`ID: ${item.id}`}</Text>
+          <View>
+            <Text style={{ fontWeight: "bold" }}>JSON Whole Item:</Text>
+            <Text>{JSON.stringify(item)}</Text>
+          </View>
+        </View>
+      </SafeAreaView>
+    </View>
+  );
+};
 
- const Section: React.FC<{
-   title: string;
- }> = ({children, title}) => {
-   const isDarkMode = useColorScheme() === 'dark';
-   return (
-     <View style={styles.sectionContainer}>
-       <Text
-         style={[
-           styles.sectionTitle,
-           {
-             color: isDarkMode ? Colors.white : Colors.black,
-           },
-         ]}>
-         {title}
-       </Text>
-       <Text
-         style={[
-           styles.sectionDescription,
-           {
-             color: isDarkMode ? Colors.light : Colors.dark,
-           },
-         ]}>
-         {children}
-       </Text>
-     </View>
-   );
- };
-
- const App = () => {
-   const isDarkMode = useColorScheme() === 'dark';
-
-   const backgroundStyle = {
-     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-   };
-
-   return (
-     <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <ScrollView
-         contentInsetAdjustmentBehavior="automatic"
-         style={backgroundStyle}>
-         <Header />
-         <View
-           style={{
-             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-           }}>
-           <Section title="Step One">
-             Edit <Text style={styles.highlight}>App.js</Text> to change this
-             screen and then come back to see your edits.
-           </Section>
-           <Section title="See Your Changes">
-             <ReloadInstructions />
-           </Section>
-           <Section title="Debug">
-             <DebugInstructions />
-           </Section>
-           <Section title="Learn More">
-             Read the docs to discover what to do next:
-           </Section>
-           <LearnMoreLinks />
-         </View>
-       </ScrollView>
-     </SafeAreaView>
-   );
- };
-
- const styles = StyleSheet.create({
-   sectionContainer: {
-     marginTop: 32,
-     paddingHorizontal: 24,
-   },
-   sectionTitle: {
-     fontSize: 24,
-     fontWeight: '600',
-   },
-   sectionDescription: {
-     marginTop: 8,
-     fontSize: 18,
-     fontWeight: '400',
-   },
-   highlight: {
-     fontWeight: '700',
-   },
- });
-
- export default App;
+export default App;
