@@ -46,7 +46,7 @@ Data is just an example, you can customize **each** radio button with data itsel
 You must use the `IRadioButton` data model for customize the radio buttons.
 They take all props which is available on [React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
 
-### IRadioButton Data Model
+### Data Model
 
 ```js
 export type IRadioButton = {
