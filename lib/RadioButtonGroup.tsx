@@ -1,25 +1,32 @@
-import React, { Component } from "react";
-import { View } from "react-native";
+import * as React from "react";
+import { View, ViewStyle } from "react-native";
 import RadioButton, {
   IRadioButtonProps,
 } from "react-native-animated-radio-button";
 /**
  * ? Local Imports
  */
-import { _container, _eachContainer } from "./RadioButtonGroup.style.js";
+import { _container, _eachContainer } from "./RadioButtonGroup.style";
+
+export type IRadioButton = {
+  id: number;
+  color: string;
+  outerStyle?: ViewStyle;
+  innerStyle?: ViewStyle;
+};
 
 export interface IRadioButtonGroupProps extends IRadioButtonProps {
   initial: number;
   horizontal?: boolean;
-  data: Array<any>;
-  onChange: (selectedItem: any) => void;
+  data: Array<IRadioButton>;
+  onChange: (selectedItem: IRadioButton) => void;
 }
 
 interface IState {
   selectedOptionId: number;
 }
 
-export default class RadioButtonGroup extends Component<
+export default class RadioButtonGroup extends React.Component<
   IRadioButtonGroupProps,
   IState
 > {
@@ -43,9 +50,11 @@ export default class RadioButtonGroup extends Component<
                   key={item.id}
                   {...item}
                   isActive={_isActive}
+                  innerBackgroundColor={item.color}
+                  innerContainerStyle={item.innerStyle}
+                  style={item.outerStyle}
                   onPress={() => {
                     this.setState({ selectedOptionId: item.id }, () => {
-                      this.props.onPress && this.props.onPress(item);
                       this.props.onChange && this.props.onChange(item);
                     });
                   }}

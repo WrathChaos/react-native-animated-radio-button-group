@@ -12,9 +12,7 @@
 
 <p align="center">
   <img alt="React Native Animated Radio Button Group"
-        src="assets/Screenshots/example.gif" />
-  <img alt="React Native Animated Radio Button Group"
-        src="assets/Screenshots/example-horizontal.png" />
+        src="assets/Screenshots/react-native-animated-radio-button-group.gif" />
 </p>
 
 # Installation
@@ -30,9 +28,7 @@ npm i react-native-animated-radio-button-group
 ###### IMPORTANT! You need install them
 
 ```js
-"react": ">= 16.x.x",
-"react-native": ">= 0.55.x",
-"react-native-animatable": ">= 1.3.3",
+"@freakycoder/react-native-bounceable": ">= 0.2.5",
 "react-native-animated-radio-button": ">= 0.0.4"
 ```
 
