@@ -732,7 +732,7 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
-"@freakycoder/react-native-bounceable@^0.2.5":
+"@freakycoder/react-native-bounceable@^0.2.5", "@freakycoder/react-native-bounceable@>= 0.2.5":
   "integrity" "sha512-J8WBOYxbm/um7SqXYneduZ08T5Kin9z+ixsS3wOLtpeNvKscuqmDEgsgefTYydeSIoI5dOfWmklnRRgu5i/8nA=="
   "resolved" "https://registry.npmjs.org/@freakycoder/react-native-bounceable/-/react-native-bounceable-0.2.5.tgz"
   "version" "0.2.5"
@@ -5367,7 +5367,12 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react-native-animated-radio-button@^2.0.6":
+"react-native-animated-radio-button-group@^1.0.0":
+  "integrity" "sha512-1B0f8fZeL5vtB9M9xxh41uwmt93Rs2TBKDCTzxO3B7gxXSXyEr70FwyQHrK043rAqkw5uDVIh5XJTV6WBmv5iA=="
+  "resolved" "https://registry.npmjs.org/react-native-animated-radio-button-group/-/react-native-animated-radio-button-group-1.0.0.tgz"
+  "version" "1.0.0"
+
+"react-native-animated-radio-button@^2.0.6", "react-native-animated-radio-button@>= 0.0.4":
   "integrity" "sha512-BYZ6iTgmXdShHluZrU51E6R/7KSkb3hTObLft51xQRkJ3RHbgQgXdCN5bgjGq+mfoxYzhrugWGcN4ILk80z8lA=="
   "resolved" "https://registry.npmjs.org/react-native-animated-radio-button/-/react-native-animated-radio-button-2.0.6.tgz"
   "version" "2.0.6"

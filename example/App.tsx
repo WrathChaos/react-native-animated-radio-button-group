@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, StatusBar, SafeAreaView } from "react-native";
-// import RadioButtonGroup from "react-native-animated-radio-button-group";
-import RadioButtonGroup, { IRadioButton } from "./build/dist/RadioButtonGroup";
+import RadioButtonGroup, {
+  IRadioButton,
+} from "react-native-animated-radio-button-group";
 
 const App = () => {
   const [item, setItem] = useState<IRadioButton>({
