@@ -19,7 +19,7 @@
   ],
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-animated-radio-button-group/issues",
-  "main": "./lib/src/RadioButtonGroup.js",
+  "main": "./build/dist/RadioButtonGroup.js",
   "repository": "git@github.com:WrathChaos/react-native-animated-radio-button-group.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
