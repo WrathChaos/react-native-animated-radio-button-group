@@ -42,18 +42,103 @@ import RadioButtonGroup from "react-native-animated-radio-button-group";
 
 ## Usage
 
-Data is just an example, you can customize **each** radio button with data itself. Example; you can set fontSize, innerColor, outerColor for each of them. They take all props which is available on [React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
+Data is just an example, you can customize **each** radio button with data itself.
+You must use the `IRadioButton` data model for customize the radio buttons.
+They take all props which is available on [React Native Animated Radio Button](https://github.com/WrathChaos/react-native-animated-radio-button).
+
+### IRadioButton Data Model
+
+```js
+export type IRadioButton = {
+  id: number,
+  color: string,
+  outerStyle?: ViewStyle,
+  innerStyle?: ViewStyle,
+};
+```
+
+### Example Usage
 
 ```jsx
-const data = [
-  { id: 0, text: "Cinema", color: "#FF0004", size: 25 },
-  { id: 1, text: "Theatre", color: "#FB4009", size: 25 },
-  { id: 2, text: "Gaming", color: "#F6800F", size: 25 },
-  { id: 3, text: "Travelling", color: "#F4A012", size: 25 },
-  { id: 4, text: "Sport", color: "#F0E017", size: 25 },
-];
+<RadioButtonGroup
+  initial={2}
+  data={data}
+  horizontal
+  onChange={(item) => console.log("Selected Item: ", item)}
+  onPress={() => {}}
+/>
+```
 
-<RadioButtonGroup initial={2} data={data} onChange={(item) => setItem(item)} />;
+### Example Data Array
+
+```jsx
+const data: Array<IRadioButton> = [
+  {
+    id: 0,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#FF0004",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#FF0004",
+  },
+  {
+    id: 1,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#FB4009",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#FB4009",
+  },
+  {
+    id: 2,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#F6800F",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#F6800F",
+  },
+  {
+    id: 4,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#F4A012",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#F4A012",
+  },
+  {
+    id: 5,
+    outerStyle: {
+      width: 50,
+      height: 50,
+      borderColor: "#F0E017",
+      borderRadius: 25,
+    },
+    innerStyle: {
+      borderRadius: 25,
+    },
+    color: "#F0E017",
+  },
+];
 ```
 
 # Configuration - Props
@@ -68,12 +153,8 @@ const data = [
 ## Future Plans
 
 - [x] ~~LICENSE~~
-- [ ] TypeScript Challenge!
+- [x] ~~TypeScript Challenge!~~
 - [ ] Write an article about the lib on Medium
-
-# Change Log
-
-Change log will be here !
 
 ## Author
 

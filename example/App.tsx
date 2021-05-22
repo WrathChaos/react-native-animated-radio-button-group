@@ -86,6 +86,7 @@ const App = () => {
       color: "#F0E017",
     },
   ];
+
   return (
     <View>
       <StatusBar barStyle="dark-content" />
