@@ -35,7 +35,7 @@
     "react-native-animated-radio-button": ">= 0.0.4"
   },
   "devDependencies": {
-    "@react-native-community/eslint-config": "^2.0.0",
+    "@react-native-community/eslint-config": "^3.0.0",
     "@types/react": "^17.0.6",
     "@types/react-native": "^0.64.5",
     "eslint": "^7.11.0",
